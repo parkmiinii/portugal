@@ -1,0 +1,789 @@
+@media screen and (max-width: 767px){
+    
+    
+    div.mainBg > img{
+        height: 110vw; margin-top: 28vw; display: block;
+        position: absolute; right: 0; z-index: 999;
+    }
+    .main_bxslider{
+        z-index: 9;
+    }
+    .main_bxslider > li{
+        display: block; height: 150vw;
+    }
+    .main_bxslider > li > img{
+        width: 100%; height: 150vw; object-fit: cover; display: block;
+    }
+
+    main > div:last-of-type{
+        background: url('../images/bg_bestArea.png') center top / cover no-repeat;
+        position: relative; padding: 150px 0 300px;
+    }
+    main > div:last-of-type > div{
+        position: sticky; top: -120px; z-index: 9; padding: 0 5% 10px;
+    }
+    main > div:last-of-type > div > b{
+        font-size: 15px; font-weight: 400; margin-bottom: 10px; display: block;
+    }
+    main > div:last-of-type > div > h2{
+        font-size: 25px; font-weight: 400; line-height: 30px; margin-bottom: 20px;
+    }
+    main > div:last-of-type > div > h2::after{
+        content: ''; display: block; border-top: 2px solid #e93535; width: 120px; margin-top: 25px;
+    }
+    main > div:last-of-type > div > strong{
+        font-size: 40px; font-weight: 300; width: 50px; display: inline-block; text-align: center;
+    }
+    main > div:last-of-type > div > span{
+        font-size: 15px; font-weight: 400; display: inline-block;
+    }
+    main > div:last-of-type > ul > li{
+        display: block; height: 500px; position: relative; margin-left: 5%; margin-top: 80px;
+    }
+    main > div:last-of-type > ul > li > img{
+        display: block; position: absolute; min-width: 200px;
+    }
+    main > div:last-of-type > ul > li:not(:last-of-type){
+        margin-bottom: 300px;
+    }
+    main > div:last-of-type > ul > li:not(:last-of-type) > img{
+        width: 80%;
+    }
+    main > div:last-of-type > ul > li:last-of-type > img{
+        width: 80%;
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n-2) > img{
+        right: 5%; top: 0; 
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n-1) > img{
+        right: 5%; bottom: 0;
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n) > img{
+        left: 0; top: 0;
+    }
+    main > div:last-of-type > ul > li > div{
+        width: 55%; padding: 8% 6%; box-sizing: border-box; background-color: white;
+        position: absolute; 
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n-2) > div{
+        left: 0; bottom: 0;
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n-1) > div{
+        left: 0; top: 0;
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n) > div{
+        right: 5%; bottom: 0;
+    }
+    main > div:last-of-type > ul > li > div > h3{
+        font-size: 5vw; font-weight: 400; margin-bottom: 30px; line-height: 6vw;
+    }
+    main > div:last-of-type > ul > li > div > h3::after{
+        content: ''; display: block; border-top: 1px solid #e93535; width: 80px; margin-top: 25px;
+    }
+    main > div:last-of-type > ul > li > div > p{
+        font-size: 14px; font-weight: 300; line-height: 20px; margin-bottom: 40px;
+    }
+    main > div:last-of-type > ul > li > div > button{
+        padding: 0; background-color: transparent; border: 1px solid #e93535; color: #e93535;
+        width: 120px; line-height: 40px; font-size: 14px; font-weight: 400; text-transform: uppercase;
+        float: right;
+    }
+
+    div[class^='bestPopup']{
+        position: fixed; left: 0; top: 0; background-color: white; z-index: 9999;
+        height: 100%;
+    }
+    div[class^='bestPopup'] > div:first-of-type{
+        margin-top: 40px;
+    }
+    .bxslider > li {
+        display: flex; justify-content: center; background-color: rgba(149, 163, 185, 0.2);
+    }
+    .bxslider > li > img {
+        width: auto; height: 40vh; object-fit: contain; 
+        display: block; margin: 0 auto; 
+    }
+    div[class^='bestPopup'] > div:last-of-type{
+        padding-bottom: 80px; margin: 40px 5% 0; box-sizing: border-box;
+        overflow-y: scroll; height: 40vh;
+    }
+    div[class^='bestPopup'] > div:last-of-type > h2{
+        font-size: 7vw; font-weight: 400; margin-bottom: 40px; line-height: 8vw;
+    }
+    div[class^='bestPopup'] > div:last-of-type > p{
+        font-size: 4.5vw; font-weight: 400; line-height: 6vw; margin-bottom: 40px;
+    }
+    div[class^='bestPopup'] > div:last-of-type > address > span{
+        padding-left: 6vw; display: block; font-size: 4.5vw; font-weight: 400; line-height: 6vw;
+        background-position: left top 3px; background-repeat: no-repeat; background-size: 4.5vw;
+        font-style: normal;
+    }
+    div[class^='bestPopup'] > div:last-of-type > address > span:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    div[class^='bestPopup'] > div:last-of-type > address > span:nth-of-type(1){background-image: url('../images/ico_time.png');}
+    div[class^='bestPopup'] > div:last-of-type > address > span:nth-of-type(2){background-image: url('../images/ico_recommend.png');}
+    div[class^='bestPopup'] > div:last-of-type > address > span:nth-of-type(3){background-image: url('../images/ico_address.png');}
+
+    /* main container */
+
+
+    div.detailContainer > div[class^='detailBg']{
+        background-position: center; background-repeat: no-repeat; background-size: cover;
+        padding: 90vw 0 50vw; margin-bottom: 180px; box-sizing: border-box;
+    }
+    div.detailContainer > div[class^='detailBg'] > h2{
+        margin-right: 3%; font-weight: 500; text-transform: uppercase;
+        color: white; text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.7);
+        text-align: right;
+    }
+    div.detailContainer > div.detailBg_faro{background-image: url('../images/city_faro.jpg'); font-size: 14vw;}
+    div.detailContainer > div.detailBg_funchal{background-image: url('../images/city_funchal.jpg'); font-size: 14vw;}
+    div.detailContainer > div.detailBg_lagos{background-image: url('../images/city_lagos.jpg'); font-size: 14vw;}
+    div.detailContainer > div.detailBg_lisbon{background-image: url('../images/city_lisbon.jpg'); font-size: 14vw;}
+    div.detailContainer > div.detailBg_porto{background-image: url('../images/city_porto.jpg'); font-size: 14vw;}
+    div.detailContainer > div.detailBg_sintra{background-image: url('../images/city_sintra.jpg'); font-size: 10vw;}
+    /* detail header */
+
+
+    div.detailContainer > ul{
+        width: 96%; margin: 0 auto 100px;
+    }
+    div.detailContainer > ul > li{
+        display: inline-block; text-align: center; width: 30%; 
+    }
+    div.detailContainer > ul > li:first-of-type > button{
+        padding-right: 2%;
+    }
+    div.detailContainer > ul > li:last-of-type > button{
+        padding-left: 2%;
+    }
+    div.detailContainer > ul > li:not(:first-of-type){
+        margin-left: 3%; position: relative;
+    }
+    div.detailContainer > ul > li:not(:first-of-type)::before{
+        content: 'dia'; display: block; background-color: #95A3B9; width: 6px; line-height: 6px;
+        transform: rotate(45deg); position: absolute; left: -10%; top: 14px; text-indent: -9999px;
+    }
+    div.detailContainer > ul > li > button{
+        padding: 0; margin: 0; border: none; background-color: transparent; font-size: 4vw; font-weight: 300;
+        text-transform: uppercase; vertical-align: middle; height: 36px; box-sizing: border-box; line-height: 5vw;
+    }
+    div.detailContainer > ul > li > button.active{
+        font-weight: 400; color: #e93535;
+    }
+    div.detailContainer > ol{
+        background-position: left top; background-repeat: no-repeat; background-size: cover;
+        padding: 0 5% 300px; box-sizing: border-box;
+    }
+    ol.historicalTab{background-image: url('../images/bg_historical.png');}
+    ol.culturalTab{background-image: url('../images/bg_cultural.png');}
+    ol.natureTab{background-image: url('../images/bg_nature.png');}
+
+    div.detailContainer > ol > li{
+        display: block;
+    }
+    div.detailContainer > ol > li:not(:last-of-type){
+        margin-bottom: 300px;
+    }
+    div.detailContainer > ol > li::after{
+        content: ''; display: block; clear: both;
+    }
+    div.detailContainer > ol > li:nth-of-type(2n-1) > div{
+        float: left;
+    } 
+    div.detailContainer > ol > li:nth-of-type(2n) > div{
+        float: right;
+    } 
+    div.detailContainer > ol > li > div:first-of-type{
+        width: 60%; box-sizing: border-box;
+    } 
+    div.detailContainer > ol > li:nth-of-type(2n-1) > div:first-of-type{
+        padding-right: 3%;
+    }
+    div.detailContainer > ol > li:nth-of-type(2n) > div:first-of-type{
+        padding-left: 3%;
+    }
+    div.detailContainer > ol > li > div:first-of-type > h3{
+        font-size: 8vw; font-weight: 400; margin-bottom: 40px; line-height: 9vw;
+    }
+    div.detailContainer > ol > li > div:first-of-type > h3::after{
+        content: ''; display: block; border-top: 2px solid #e93535; width: 100px; margin-top: 35px;
+    }
+    div.detailContainer > ol > li > div:first-of-type > p{
+        font-size: 4vw; font-weight: 300; line-height: 5.5vw; margin-bottom: 40px; word-break: break-all;
+    }
+    div.detailContainer > ol > li > div:first-of-type > address > span{
+        font-size: 4vw; font-weight: 300; display: block; font-style: normal; margin-bottom: 20px; line-height: 5.5vw; 
+        padding-left: 5.5vw; background-position: left top 0.4vw; background-repeat: no-repeat; background-size: 4vw; 
+    }
+    div.detailContainer > ol > li > div:first-of-type > address > span:nth-child(1){background-image: url('../images/ico_time.png');}
+    div.detailContainer > ol > li > div:first-of-type > address > span:nth-child(2){background-image: url('../images/ico_recommend.png');}
+    div.detailContainer > ol > li > div:first-of-type > address > span:nth-child(3){background-image: url('../images/ico_address.png');}
+
+
+    div.detailContainer > ol > li > div:last-of-type{
+        width: 40%; text-align: right; position: relative;
+    }
+    div.detailContainer > ol > li > div:last-of-type > img{
+        width: 100%; display: block;
+    }
+    div.detailContainer > ol > li > div:last-of-type > a:first-of-type{
+        display: block; background-color: rgba(0, 0, 0, 0.5); padding: 8px;
+        width: 110px; text-align: left; box-sizing: border-box; border-radius: 10px;
+        position: absolute; bottom: 5px;
+    }
+    div.detailContainer > ol > li:nth-of-type(2n-1) > div:last-of-type > a:first-of-type{
+        left: calc(50% - 55px);
+    }
+    div.detailContainer > ol > li:nth-of-type(2n) > div:last-of-type > a:first-of-type{
+        right: calc(50% - 55px);
+    }
+    div.detailContainer > ol > li > div:last-of-type > a:first-of-type > img{
+        width: 20px; display: inline-block;
+    }
+    div.detailContainer > ol > li > div:last-of-type > a:first-of-type > span{
+        font-size: 14px; font-weight: 700; color: white; display: inline-block; text-transform: capitalize;
+        line-height: 20px; vertical-align: top; margin-left: 5px;
+    }
+
+
+}
+/* mobile */
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    
+    div.mainBg > img{
+        width: 35%; margin-top: 40px; display: block;
+        position: absolute; right: 0; z-index: 999;
+    }
+    .main_bxslider{
+        z-index: 9;
+    }
+    .main_bxslider > li{
+        display: block; height: auto;
+    }
+    .main_bxslider > li > img{
+        width: 100%; object-fit:fill; display: block;
+    }
+
+    main > div:last-of-type{
+        background: url('../images/bg_bestArea.png') center top / cover no-repeat;
+        position: relative; padding: 250px 0 500px;
+    }
+    main > div:last-of-type::after{
+        content: ''; display: block; clear: both;
+    }
+    main > div:last-of-type > div{
+        position: sticky; top: 100px; left: 5%; width: 30%; float: left;
+    }
+    main > div:last-of-type > div > b{
+        font-size: 40px; font-weight: 400; margin-bottom: 60px; display: block;
+    }
+    main > div:last-of-type > div > h2{
+        font-size: 5vw; font-weight: 400; line-height: 7vw; margin-bottom: 60px;
+    }
+    main > div:last-of-type > div > h2::after{
+        content: ''; display: block; border-top: 2px solid #e93535; width: 150px; margin-top: 55px;
+    }
+    main > div:last-of-type > div > strong{
+        font-size: 80px; font-weight: 300; width: 88px; display: inline-block; text-align: center;
+    }
+    main > div:last-of-type > div > span{
+        font-size: 36px; font-weight: 400; display: inline-block;
+    }
+    main > div:last-of-type > ul{
+        width: 60%; float: right;
+    }
+    main > div:last-of-type > ul > li{
+        display: block; height: 750px; position: relative;
+    }
+    main > div:last-of-type > ul > li > img{
+        display: block; position: absolute; min-width: 430px;
+    }
+    main > div:last-of-type > ul > li:not(:last-of-type){
+        margin-bottom: 500px;
+    }
+    main > div:last-of-type > ul > li:not(:last-of-type) > img{
+        width: 80%;
+    }
+    main > div:last-of-type > ul > li:last-of-type > img{
+        width: 60%;
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n-2) > img{
+        right: 5%; top: 0; 
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n-1) > img{
+        right: 5%; bottom: 0;
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n) > img{
+        left: 0; top: 0;
+    }
+    main > div:last-of-type > ul > li > div{
+        width: 50%; padding: 8%; box-sizing: border-box; background-color: white;
+        position: absolute; 
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n-2) > div{
+        left: 0; bottom: 0;
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n-1) > div{
+        left: 0; top: 0;
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n) > div{
+        right: 5%; bottom: 0;
+    }
+    main > div:last-of-type > ul > li > div > h3{
+        font-size: 3.2vw; font-weight: 400; margin-bottom: 40px; line-height: 5vw;
+    }
+    main > div:last-of-type > ul > li > div > h3::after{
+        content: ''; display: block; border-top: 1px solid #e93535; width: 100px; margin-top: 35px;
+    }
+    main > div:last-of-type > ul > li > div > p{
+        font-size: 1.8vw; font-weight: 300; line-height: 3.2vw; margin-bottom: 60px;
+    }
+    main > div:last-of-type > ul > li > div > button{
+        padding: 0; background-color: transparent; border: 1px solid #e93535; color: #e93535;
+        width: 150px; line-height: 45px; font-size: 14px; font-weight: 400; text-transform: uppercase;
+        float: right;
+    }
+
+    div[class^='bestPopup']{
+        position: fixed; left: 0; top: 0; background-color: white; z-index: 9999;
+        height: 100%;
+    }
+    div[class^='bestPopup']::after{
+        content: ''; display: block; clear: both;
+    }
+    div[class^='bestPopup'] > div{
+        float: left; 
+    }
+    div[class^='bestPopup'] > div:first-of-type{
+        width: 65%; margin-top: 60px;
+    }
+    .bxslider > li {
+        display: flex; justify-content: center; background-color: rgba(149, 163, 185, 0.2);
+    }
+    .bxslider > li > img {
+        width: auto; height: 80vh; object-fit: contain; 
+        display: block; margin: 0 auto; 
+    }
+    div[class^='bestPopup'] > div:last-of-type{
+        width: 35%; padding: 0 3% 80px; margin-top: 60px; box-sizing: border-box;
+         overflow-y: scroll; height: 100%;
+    }
+    div[class^='bestPopup'] > div:last-of-type > h2{
+        font-size: 4vw; font-weight: 400; margin-bottom: 60px; line-height: 5vw;
+    }
+    div[class^='bestPopup'] > div:last-of-type > p{
+        font-size: 2vw; font-weight: 400; line-height: 3vw; margin-bottom: 40px;
+    }
+    div[class^='bestPopup'] > div:last-of-type > address > span{
+        padding-left: 3vw; display: block; font-size: 2vw; font-weight: 400; line-height: 3vw;
+        background-position: left top 3px; background-repeat: no-repeat; background-size: 2vw;
+        font-style: normal;
+    }
+    div[class^='bestPopup'] > div:last-of-type > address > span:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    div[class^='bestPopup'] > div:last-of-type > address > span:nth-of-type(1){background-image: url('../images/ico_time.png');}
+    div[class^='bestPopup'] > div:last-of-type > address > span:nth-of-type(2){background-image: url('../images/ico_recommend.png');}
+    div[class^='bestPopup'] > div:last-of-type > address > span:nth-of-type(3){background-image: url('../images/ico_address.png');}
+
+    /* main container */
+
+
+    div.detailContainer > div[class^='detailBg']{
+        background-position: center; background-repeat: no-repeat; background-size: cover;
+        padding: 28vw 0 25vw; margin-bottom: 250px; box-sizing: border-box;
+    }
+    div.detailContainer > div[class^='detailBg'] > h2{
+        margin-right: 5%; font-weight: 500; text-transform: uppercase;
+        color: white; text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+        font-size: 8vw; text-align: right;
+    }
+    /* detail header */
+
+
+    div.detailContainer > div.detailBg_faro{background-image: url('../images/city_faro.jpg');}
+    div.detailContainer > div.detailBg_funchal{background-image: url('../images/city_funchal.jpg');}
+    div.detailContainer > div.detailBg_lagos{background-image: url('../images/city_lagos.jpg');}
+    div.detailContainer > div.detailBg_lisbon{background-image: url('../images/city_lisbon.jpg');}
+    div.detailContainer > div.detailBg_porto{background-image: url('../images/city_porto.jpg');}
+    div.detailContainer > div.detailBg_sintra{background-image: url('../images/city_sintra.jpg');}
+    div.detailContainer > ul{
+        width: 90%; margin: 0 auto 180px;
+    }
+    div.detailContainer > ul > li{
+        display: inline-block; text-align: center; width: 30%; 
+    }
+    div.detailContainer > ul > li:first-of-type > button{
+        padding-right: 2%
+    }
+    div.detailContainer > ul > li:last-of-type > button{
+        padding-left: 2%
+    }
+    div.detailContainer > ul > li:not(:first-of-type){
+        margin-left: 4%; position: relative;
+    }
+    div.detailContainer > ul > li:not(:first-of-type)::before{
+        content: 'dia'; display: block; background-color: #95A3B9; width: 10px; line-height: 10px;
+        transform: rotate(45deg); position: absolute; left: -8%; top: 14px; text-indent: -9999px;
+    }
+    div.detailContainer > ul > li > button{
+        padding: 0; margin: 0; border: none; background-color: transparent; font-size: 18px; font-weight: 300;
+        text-transform: uppercase; vertical-align: middle; height: 36px;
+    }
+    div.detailContainer > ul > li > button.active{
+        font-weight: 400; color: #e93535;
+    }
+    div.detailContainer > ol{
+        background-position: left top; background-repeat: no-repeat; background-size: cover;
+        padding: 0 5% 400px; box-sizing: border-box;
+    }
+    ol.historicalTab{background-image: url('../images/bg_historical.png');}
+    ol.culturalTab{background-image: url('../images/bg_cultural.png');}
+    ol.natureTab{background-image: url('../images/bg_nature.png');}
+
+    div.detailContainer > ol > li{
+        display: block;
+    }
+    div.detailContainer > ol > li:not(:last-of-type){
+        margin-bottom: 400px;
+    }
+    div.detailContainer > ol > li::after{
+        content: ''; display: block; clear: both;
+    }
+    div.detailContainer > ol > li:nth-of-type(2n-1) > div{
+        float: left;
+    } 
+    div.detailContainer > ol > li:nth-of-type(2n) > div{
+        float: right;
+    } 
+    div.detailContainer > ol > li > div:first-of-type{
+        width: 45%; box-sizing: border-box;
+    } 
+    div.detailContainer > ol > li:nth-of-type(2n-1) > div:first-of-type{
+        padding-right: 5%;
+    }
+    div.detailContainer > ol > li:nth-of-type(2n) > div:first-of-type{
+        padding-left: 5%;
+    }
+    div.detailContainer > ol > li > div:first-of-type > h3{
+        font-size: 4vw; font-weight: 400; margin-bottom: 60px; line-height: 5vw;
+    }
+    div.detailContainer > ol > li > div:first-of-type > h3::after{
+        content: ''; display: block; border-top: 2px solid #e93535; width: 150px; margin-top: 55px;
+    }
+    div.detailContainer > ol > li > div:first-of-type > p{
+        font-size: 2vw; font-weight: 300; line-height: 3.5vw; margin-bottom: 40px;
+    }
+    div.detailContainer > ol > li > div:first-of-type > address > span{
+        font-size: 2vw; font-weight: 300; display: block; font-style: normal; margin-bottom: 20px; line-height: 3vw; 
+        padding-left: 3vw; background-position: left top 0.4vw; background-repeat: no-repeat; background-size: 2vw; 
+    }
+    div.detailContainer > ol > li > div:first-of-type > address > span:nth-child(1){background-image: url('../images/ico_time.png');}
+    div.detailContainer > ol > li > div:first-of-type > address > span:nth-child(2){background-image: url('../images/ico_recommend.png');}
+    div.detailContainer > ol > li > div:first-of-type > address > span:nth-child(3){background-image: url('../images/ico_address.png');}
+
+
+    div.detailContainer > ol > li > div:last-of-type{
+        width: 55%; text-align: right; position: relative;
+    }
+    div.detailContainer > ol > li > div:last-of-type > img{
+        width: 100%; display: block;
+    }
+    div.detailContainer > ol > li > div:last-of-type > a:first-of-type{
+        display: block; background-color: rgba(0, 0, 0, 0.5); padding: 10px 10px 10px 12px;
+        width: 120px; text-align: left; box-sizing: border-box; border-radius: 10px;
+        position: absolute; bottom: 20px;
+    }
+    div.detailContainer > ol > li:nth-of-type(2n-1) > div:last-of-type > a:first-of-type{
+        left: 20px;
+    }
+    div.detailContainer > ol > li:nth-of-type(2n) > div:last-of-type > a:first-of-type{
+        right: 20px;
+    }
+    div.detailContainer > ol > li > div:last-of-type > a:first-of-type > img{
+        width: 20px; display: inline-block;
+    }
+    div.detailContainer > ol > li > div:last-of-type > a:first-of-type > span{
+        font-size: 14px; font-weight: 700; color: white; display: inline-block; text-transform: capitalize;
+        line-height: 20px; vertical-align: top; margin-left: 5px;
+    }
+
+
+}
+/* tablet */
+
+
+@media screen and (min-width: 1280px){
+    
+    
+    div.mainBg > img{
+        width: 35%; margin-top: 40px; display: block;
+        position: absolute; right: 0; z-index: 999;
+    }
+    .main_bxslider{
+        z-index: 9;
+    }
+    .main_bxslider > li{
+        display: block; height: auto;
+    }
+    .main_bxslider > li > img{
+        width: 100%; object-fit:fill; display: block;
+    }
+
+    main > div:last-of-type{
+        background: url('../images/bg_bestArea.png') center top / cover no-repeat;
+        position: relative; padding: 250px 0 500px;
+    }
+    main > div:last-of-type::after{
+        content: ''; display: block; clear: both;
+    }
+    main > div:last-of-type > div{
+        position: sticky; top: 150px; left: 5%; width: 30%; float: left;
+    }
+    main > div:last-of-type > div > b{
+        font-size: 40px; font-weight: 400; margin-bottom: 60px; display: block;
+    }
+    main > div:last-of-type > div > h2{
+        font-size: 5vw; font-weight: 400; line-height: 7vw; margin-bottom: 60px;
+    }
+    main > div:last-of-type > div > h2::after{
+        content: ''; display: block; border-top: 2px solid #e93535; width: 150px; margin-top: 55px;
+    }
+    main > div:last-of-type > div > strong{
+        font-size: 80px; font-weight: 300; width: 88px; display: inline-block; text-align: center;
+    }
+    main > div:last-of-type > div > span{
+        font-size: 36px; font-weight: 400; display: inline-block;
+    }
+    main > div:last-of-type > ul{
+        width: 60%; float: right;
+    }
+    main > div:last-of-type > ul > li{
+        display: block; height: 1030px; position: relative;
+    }
+    main > div:last-of-type > ul > li > img{
+        display: block; position: absolute; min-width: 680px;
+    }
+    main > div:last-of-type > ul > li:not(:last-of-type){
+        margin-bottom: 500px;
+    }
+    main > div:last-of-type > ul > li:not(:last-of-type) > img{
+        width: 80%;
+    }
+    main > div:last-of-type > ul > li:last-of-type > img{
+        width: 60%;
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n-2) > img{
+        right: 5%; top: 0; 
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n-1) > img{
+        right: 5%; bottom: 0;
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n) > img{
+        left: 0; top: 0;
+    }
+    main > div:last-of-type > ul > li > div{
+        width: 50%; padding: 8%; box-sizing: border-box; background-color: white;
+        position: absolute; 
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n-2) > div{
+        left: 0; bottom: 0;
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n-1) > div{
+        left: 0; top: 0;
+    }
+    main > div:last-of-type > ul > li:nth-of-type(3n) > div{
+        right: 5%; bottom: 0;
+    }
+    main > div:last-of-type > ul > li > div > h3{
+        font-size: 40px; font-weight: 400; margin-bottom: 60px; line-height: 48px;
+    }
+    main > div:last-of-type > ul > li > div > h3::after{
+        content: ''; display: block; border-top: 1px solid #e93535; width: 150px; margin-top: 55px;
+    }
+    main > div:last-of-type > ul > li > div > p{
+        font-size: 20px; font-weight: 300; line-height: 35px; margin-bottom: 60px;
+    }
+    main > div:last-of-type > ul > li > div > button{
+        padding: 0; background-color: transparent; border: 1px solid #e93535; color: #e93535;
+        width: 230px; line-height: 58px; font-size: 20px; font-weight: 400; text-transform: uppercase;
+        float: right;
+    }
+    main > div:last-of-type > ul > li > div > button:hover{
+        background-color: #95A3B9; border-color: #95A3B9; color: white;
+    }
+
+    div[class^='bestPopup']{
+        position: fixed; left: 0; top: 0; background-color: white; z-index: 9999;
+        height: 100%;
+    }
+    div[class^='bestPopup']::after{
+        content: ''; display: block; clear: both;
+    }
+    div[class^='bestPopup'] > div{
+        float: left; 
+    }
+    
+    div[class^='bestPopup'] > div:first-of-type{
+        width: 65%; margin-top: 60px;
+    }
+    .bxslider > li {
+        display: flex; justify-content: center; background-color: rgba(149, 163, 185, 0.2);
+    }
+    .bxslider > li > img {
+        width: auto; height: 80vh; object-fit: contain; 
+        display: block; margin: 0 auto; 
+    }
+    div[class^='bestPopup'] > div:last-of-type{
+        width: 35%; padding: 60px 3% 80px; box-sizing: border-box;
+    }
+    div[class^='bestPopup'] > div:last-of-type > h2{
+        font-size: 36px; font-weight: 400; margin-bottom: 60px; line-height: 40px;
+    }
+    div[class^='bestPopup'] > div:last-of-type > p{
+        font-size: 18px; font-weight: 400; line-height: 30px; margin-bottom: 60px;
+    }
+    div[class^='bestPopup'] > div:last-of-type > address > span{
+        padding-left: 30px; display: block; font-size: 18px; font-weight: 400; line-height: 24px;
+        background-position: left top 3px; background-repeat: no-repeat; background-size: 20px;
+        font-style: normal;
+    }
+    div[class^='bestPopup'] > div:last-of-type > address > span:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    div[class^='bestPopup'] > div:last-of-type > address > span:nth-of-type(1){background-image: url('../images/ico_time.png');}
+    div[class^='bestPopup'] > div:last-of-type > address > span:nth-of-type(2){background-image: url('../images/ico_recommend.png');}
+    div[class^='bestPopup'] > div:last-of-type > address > span:nth-of-type(3){background-image: url('../images/ico_address.png');}
+
+    /* main container */
+
+
+    div.detailContainer > div[class^='detailBg']{
+        background-position: center; background-repeat: no-repeat; background-size: cover;
+        padding: 400px 0 480px; margin-bottom: 250px; box-sizing: border-box;
+    }
+    div.detailContainer > div[class^='detailBg'] > h2{
+        margin-right: 5%; font-weight: 500; text-transform: uppercase;
+        color: white; text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+        font-size: 8vw; text-align: right;
+    }
+    /* detail header */
+
+
+    div.detailContainer > div.detailBg_faro{background-image: url('../images/city_faro.jpg');}
+    div.detailContainer > div.detailBg_funchal{background-image: url('../images/city_funchal.jpg');}
+    div.detailContainer > div.detailBg_lagos{background-image: url('../images/city_lagos.jpg');}
+    div.detailContainer > div.detailBg_lisbon{background-image: url('../images/city_lisbon.jpg');}
+    div.detailContainer > div.detailBg_porto{background-image: url('../images/city_porto.jpg');}
+    div.detailContainer > div.detailBg_sintra{background-image: url('../images/city_sintra.jpg');}
+    div.detailContainer > ul{
+        width: 1150px; margin: 0 auto 180px;
+    }
+    div.detailContainer > ul > li{
+        display: inline-block; width: 350px; text-align: center;
+    }
+    div.detailContainer > ul > li:not(:last-of-type),
+    div.detailContainer > ul > li:not(:last-of-type) > button{
+        width: 360px;
+    }
+    div.detailContainer > ul > li:last-of-type,
+    div.detailContainer > ul > li:last-of-type > button{
+        width: 335px;
+    }
+    div.detailContainer > ul > li:not(:first-of-type){
+        margin-left: 40px; position: relative;
+    }
+    div.detailContainer > ul > li:not(:first-of-type)::before{
+        content: 'dia'; display: block; background-color: #95A3B9; width: 10px; line-height: 10px;
+        transform: rotate(45deg); position: absolute; left: -26px; top: 15px; text-indent: -9999px;
+    }
+    div.detailContainer > ul > li > button{
+        padding: 0; margin: 0; border: none; background-color: transparent; font-size: 28px; font-weight: 300;
+        text-transform: uppercase; vertical-align: top;
+    }
+    div.detailContainer > ul > li > button:hover,
+    div.detailContainer > ul > li > button.active{
+        font-weight: 400; color: #e93535;
+    }
+    div.detailContainer > ol{
+        background-position: left top; background-repeat: no-repeat; background-size: cover;
+        padding: 0 10% 400px; box-sizing: border-box;
+    }
+    ol.historicalTab{background-image: url('../images/bg_historical.png');}
+    ol.culturalTab{background-image: url('../images/bg_cultural.png');}
+    ol.natureTab{background-image: url('../images/bg_nature.png');}
+
+    div.detailContainer > ol > li{
+        display: block;
+    }
+    div.detailContainer > ol > li:not(:last-of-type){
+        margin-bottom: 400px;
+    }
+    div.detailContainer > ol > li::after{
+        content: ''; display: block; clear: both;
+    }
+    div.detailContainer > ol > li:nth-of-type(2n-1) > div{
+        float: left;
+    } 
+    div.detailContainer > ol > li:nth-of-type(2n) > div{
+        float: right;
+    } 
+    div.detailContainer > ol > li > div:first-of-type{
+        width: 45%; box-sizing: border-box;
+    } 
+    div.detailContainer > ol > li:nth-of-type(2n-1) > div:first-of-type{
+        padding-right: 10%;
+    }
+    div.detailContainer > ol > li:nth-of-type(2n) > div:first-of-type{
+        padding-left: 10%;
+    }
+    div.detailContainer > ol > li > div:first-of-type > h3{
+        font-size: 4vw; font-weight: 400; margin-bottom: 60px; line-height: 5vw;
+    }
+    div.detailContainer > ol > li > div:first-of-type > h3::after{
+        content: ''; display: block; border-top: 2px solid #e93535; width: 150px; margin-top: 55px;
+    }
+    div.detailContainer > ol > li > div:first-of-type > p{
+        font-size: 20px; font-weight: 300; line-height: 35px; margin-bottom: 40px;
+    }
+    div.detailContainer > ol > li > div:first-of-type > address > span{
+        font-size: 20px; font-weight: 300; display: block; font-style: normal; margin-bottom: 20px; line-height: 28px; 
+        padding-left: 30px; background-position: left top 3px; background-repeat: no-repeat; background-size: 20px; 
+    }
+    div.detailContainer > ol > li > div:first-of-type > address > span:nth-child(1){background-image: url('../images/ico_time.png');}
+    div.detailContainer > ol > li > div:first-of-type > address > span:nth-child(2){background-image: url('../images/ico_recommend.png');}
+    div.detailContainer > ol > li > div:first-of-type > address > span:nth-child(3){background-image: url('../images/ico_address.png');}
+
+
+    div.detailContainer > ol > li > div:last-of-type{
+        width: 55%; text-align: right; position: relative;
+    }
+    div.detailContainer > ol > li > div:last-of-type > img{
+        width: 100%; display: block;
+    }
+    div.detailContainer > ol > li > div:last-of-type > a:first-of-type{
+        display: block; background-color: rgba(0, 0, 0, 0.5); padding: 10px 20px 10px 20px;
+        width: 180px; text-align: left; box-sizing: border-box; border-radius: 10px;
+        position: absolute; bottom: 30px;
+    }
+    div.detailContainer > ol > li:nth-of-type(2n-1) > div:last-of-type > a:first-of-type{
+        left: 30px;
+    }
+    div.detailContainer > ol > li:nth-of-type(2n) > div:last-of-type > a:first-of-type{
+        right: 30px;
+    }
+    div.detailContainer > ol > li > div:last-of-type > a:first-of-type > img{
+        width: 30px; display: inline-block;
+    }
+    div.detailContainer > ol > li > div:last-of-type > a:first-of-type > span{
+        font-size: 20px; font-weight: 700; color: white; display: inline-block; text-transform: capitalize;
+        line-height: 30px; vertical-align: top; margin-left: 10px;
+    }
+
+
+}
+/* desktop */

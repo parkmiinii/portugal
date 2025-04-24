@@ -1,0 +1,519 @@
+html{scroll-behavior: smooth;}
+
+header > nav,
+main > div > ul > li > div > p,
+main > div > ul > li > div > button,
+div[class^='bestPopup'] > div:last-of-type > p,
+div[class^='bestPopup'] > div:last-of-type > address,
+div.detailContainer > ul > li > button,
+div.detailContainer > ol > li > div:first-of-type > p,
+div.detailContainer > ol > li > div:first-of-type > address,
+div.detailContainer > ol > li > div:last-of-type > a > span,
+footer > div > div:first-of-type > p,
+footer > div > div:last-of-type > input[type="submit"],
+footer > div:last-of-type > span{
+    font-family: "noto-sans"; 
+}
+main > div:last-of-type > div,
+main > div > ul > li > div > h3,
+div[class^='bestPopup'] > div:last-of-type > h2,
+div.detailContainer > div[class^='detailBg'] > h2,
+div.detailContainer > ol > li > div:first-of-type > h3,
+footer > div:first-of-type > div:first-of-type > h3,
+footer > div:first-of-type > div:last-of-type > form > label,
+footer > div:first-of-type > div:last-of-type > form > input[type="text"],
+footer > div:first-of-type > div:last-of-type > form > input[type="email"]{
+    font-family:"nocturne-serif";
+}
+main > div:last-of-type > div,
+main > div > ul > li > div > h3,
+main > div > ul > li > div > p,
+div[class^='bestPopup'] > div:last-of-type > h2,
+div[class^='bestPopup'] > div:last-of-type > p,
+div[class^='bestPopup'] > div:last-of-type > address,
+div.detailContainer > div.detailBg > h2,
+div.detailContainer > ul > li > button,
+div.detailContainer > ol > li > div:first-of-type > h3,
+div.detailContainer > ol > li > div:first-of-type > p,
+div.detailContainer > ol > li > div:first-of-type > address,
+div.detailContainer > ol > li > div:last-of-type > a > span{
+    color: black;
+}
+
+a{text-decoration: none;}
+
+a.btn_top{
+    background-image: url('../images/ico_top.png'); text-indent: -9999px; z-index: 100;
+    display: block; background-repeat: no-repeat; background-size: contain; position: fixed;
+}
+
+button.btn_close{
+    background-color: transparent; border: none; text-indent: -9999px;
+    background-image: url('../images/ico_x.png'); background-repeat: no-repeat; background-size: contain;
+    position: absolute;
+}
+button,
+input[type="submit"]{cursor: pointer;}
+
+[class*='Popup'],
+[class*='Tab']{display: none;}
+
+[class*='Popup'].active,
+[class*='Tab'].active{display: block;}
+
+
+@media screen and (max-width: 767px){
+    a.btn_top{
+        width: 40px; line-height: 40px; bottom: 20px; right: 10px;
+    }
+    button.btn_close{
+        width: 20px; line-height: 20px; top: 10px; right: 20px;
+    }
+
+
+    header{
+        position: relative; z-index: 9999;
+    }
+    header h1{
+        width: 30vw; position: absolute; left: calc(50% - 15vw); top: 4vw;
+    }
+    header h1 a{
+        display: block;
+    }
+    header h1 a img{
+        width: 100%; display: block;
+    }
+    header nav{
+        position: absolute; width: 100vw; left: -70vw; top: 32vw; transition-duration: 0.5s;
+    }
+    header nav.active{
+        left: 1vw; width: 90vw;
+    }
+    header nav::after{
+        content: ''; display: block; clear: both;
+    }
+    header nav > button{
+        background-color: rgba(0, 0, 0, 0.6); border: none; border-radius: 0 30vw 30vw 0;
+        width: 30vw; height: 60vw; font-size: 4vw; padding: 0 3vw 0 2vw; box-sizing: border-box;
+        text-align: left; color: white; line-height: 5.5vw; font-family: inherit;
+        background-image: url('../images/ico_arrow.png'); background-repeat: no-repeat;
+        background-position: right 1.5vw center; background-size: 6vw;
+        float: right; margin-top: 0vw; transition-duration: 0.5s;
+    }
+    header nav.active > button{
+        width: 15vw; height: 30vw; border-radius: 0 15vw 15vw 0; color: transparent; 
+        padding: 0; background-image: url('../images/ico_arrow_re.png'); background-position: right 5vw center;
+        margin-top: 36vw;
+    }
+    header nav > ul{
+        background-color: rgba(0, 0, 0, 0.6); padding: 14vw 10vw; box-sizing: border-box;
+        width: 70vw; float: right;
+    }
+    header nav > ul > li{
+        font-size: 6vw;
+    }
+    header nav > ul > li:not(:last-of-type){
+        margin-bottom: 8vw;
+    }
+    header nav > ul > li > a{
+        color: white; display: block;
+    }
+
+
+    footer{
+        padding: 10% 0 40px; background: url('../images/bg_footer.png') center top / cover no-repeat;
+        position: relative;
+    }
+    footer > div:first-of-type{
+        background-color: rgba(0, 0, 0, 0.5); padding: 25% 12%; margin: 0 10% 40px;
+    }
+    footer > div:first-of-type::after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div:first-of-type > div:first-of-type{
+        color: white; margin-bottom: 40px;
+    }
+    footer > div:first-of-type > div:first-of-type > h3{
+        color: inherit; text-transform: capitalize; font-size: 8vw; font-weight: 400;
+        margin-bottom: 30px;
+    }
+    footer > div:first-of-type > div:first-of-type > h3::after{
+        content: ''; display: block; border-top: 2px solid #e93535; width: 100px; margin-top: 25px;
+    }
+    footer > div:first-of-type > div:first-of-type > p{
+        color: inherit; font-size: 12px; line-height: 18px; font-weight: 300;
+    }
+    footer > div:first-of-type > div:last-of-type{
+        color: white; text-align: right; margin-top: 6vw;
+    }
+    footer > div:first-of-type > div:last-of-type > form > label{
+        font-size: 12px; font-weight: 400; text-transform: capitalize; width: 20%; display: inline-block;
+        text-align: left; line-height: 30px; vertical-align: top; 
+    }
+    footer > div:first-of-type > div:last-of-type > form > input:not(:last-of-type){
+        width: 75%; line-height: 30px; padding: 0 5px; box-sizing: border-box; border: 1px solid #c1c1c1; 
+        font-size: 12px;
+    }
+    footer > div:first-of-type > div:last-of-type > form > label:first-of-type,
+    footer > div:first-of-type > div:last-of-type > form > input:first-of-type{
+        margin-bottom: 15px;
+    }
+    footer > div:first-of-type > div:last-of-type > form > label:nth-of-type(2),
+    footer > div:first-of-type > div:last-of-type > form > input:nth-of-type(2){
+        margin-bottom: 30px;
+    }
+    footer > div:first-of-type > div:last-of-type > form > input[type="email"]::placeholder{
+        color: #c1c1c1; font-size: 12px; font-family: inherit;
+    }
+    footer > div:first-of-type > div:last-of-type > form > input[type="submit"]{
+        border: none; background-color: #e93535; width: 150px; line-height: 35px; color: inherit;
+        font-size: 12px; font-weight: 400; text-transform: capitalize;
+    }
+    footer > h2{
+        position: absolute; width: 30%; left: 5%; bottom: 35px; max-width: 100px;
+    }
+    footer > h2 > a{
+        display: block;
+    }
+    footer > h2 > a > img{
+        width: 100%;
+    }
+    footer > div:last-of-type{
+        display: flex; flex-direction: column-reverse;
+    }
+    footer > div:last-of-type > span{
+        color: white; font-size: 12px; font-weight: 400; box-sizing: border-box;
+        line-height: 18px; text-align: right; display: block; width: 60%; margin-left: 40%; padding-right: 5%;
+    }
+    footer > div:last-of-type > ul{
+        text-align: center; margin-bottom: 60px;
+    }
+    footer > div:last-of-type > ul > li{
+        display: inline-block; line-height: 3vw; min-height: 20px;
+        background-repeat: no-repeat; background-size: contain;
+    }
+    footer > div:last-of-type > ul > li:not(:last-of-type){
+        margin-right: 5%; width: 3vw; background-position: center; min-width: 20px;
+    }
+    footer > div:last-of-type > ul > li:last-of-type{
+        width: 18vw; background-position: left bottom; min-width: 60px;
+    }
+    footer > div:last-of-type > ul > li:nth-of-type(1){background-image: url('../images/ico_sns_youtube.png');}
+    footer > div:last-of-type > ul > li:nth-of-type(2){background-image: url('../images/ico_sns_facebook.png');}
+    footer > div:last-of-type > ul > li:nth-of-type(3){background-image: url('../images/ico_sns_instagram.png');}
+    footer > div:last-of-type > ul > li:nth-of-type(4){background-image: url('../images/ico_sns_twitter.png');}
+    footer > div:last-of-type > ul > li:nth-of-type(5){background-image: url('../images/logo_portugalPage.png');}
+    
+    footer > div:last-of-type > ul > li > a{
+        text-indent: -9999px; display: block;
+    }
+}
+/* mobile */
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    a.btn_top{
+        width: 50px; line-height: 50px; bottom: 30px; right: 20px;
+    }
+    button.btn_close{
+        width: 25px; line-height: 25px; top: 25px; right: 25px;
+    }
+
+
+    header{
+        position: relative; z-index: 9999;
+    }
+    header h1{
+        width: 12vw; position: absolute; left: calc(50% - 6vw); top: 4vw;
+    }
+    header h1 a{
+        display: block;
+    }
+    header h1 a img{
+        width: 100%; display: block;
+    }
+    header nav{
+        position: absolute; width: 37vw; left: -25vw; top: 15vw; transition-duration: 0.5s;
+    }
+    header nav.active{
+        left: 6vw; width: 32vw;
+    }
+    header nav::after{
+        content: ''; display: block; clear: both;
+    }
+    header nav > button{
+        background-color: rgba(0, 0, 0, 0.41); border: none; border-radius: 0 12vw 12vw 0;
+        width: 12vw; height: 24vw; font-size: 1.3vw; padding: 0 1vw 0 1.5vw; box-sizing: border-box;
+        text-align: left; color: white; line-height: 2.5vw; font-family: inherit;
+        background-image: url('../images/ico_arrow.png'); background-repeat: no-repeat;
+        background-position: right 10px center; background-size: 2.5vw;
+        float: right; margin-top: 5vw; transition-duration: 0.5s;
+    }
+    header nav.active > button{
+        width: 6vw; height: 12vw; border-radius: 0 6vw 6vw 0; color: transparent;
+        padding: 0px; background-image: url('../images/ico_arrow_re.png'); background-position: right 2vw center;
+        margin-top: 10vw;
+    }
+    header nav > ul{
+        background-color: rgba(0, 0, 0, 0.4); padding: 3.5vw; box-sizing: border-box;
+        width: 25vw; float: right;
+    }
+    header nav > ul > li{
+        font-size: 2vw; transition-duration: 0.3s; padding-left: 0px;
+        background-image: url('../images/ico_arrow.png'); background-position: -2vw;
+        background-repeat: no-repeat; background-size: 2vw;
+    }
+    header nav > ul > li:not(:last-of-type){
+        margin-bottom: 3vw;
+    }
+    header nav > ul > li > a{
+        color: white; display: block;
+    }
+
+
+    footer{
+        padding: 50px 50px 80px; background: url('../images/bg_footer.png') left top / cover no-repeat;
+    }
+    footer > div:first-of-type{
+        background-color: rgba(0, 0, 0, 0.5); padding: 100px 60px; margin-bottom: 40px;
+    }
+    footer > div:first-of-type::after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div:first-of-type > div:first-of-type{
+        float: left; color: white; width: 50%;
+    }
+    footer > div:first-of-type > div:first-of-type > h3{
+        color: inherit; text-transform: capitalize; font-size: 8vw; font-weight: 400;
+        margin-bottom: 60px;
+    }
+    footer > div:first-of-type > div:first-of-type > h3::after{
+        content: ''; display: block; border-top: 2px solid #e93535; width: 150px; margin-top: 55px;
+    }
+    footer > div:first-of-type > div:first-of-type > p{
+        color: inherit; font-size: 18px; line-height: 30px; font-weight: 300;
+    }
+    footer > div:first-of-type > div:last-of-type{
+        float: right; color: white; width: 40%; text-align: right; margin-top: 6vw;
+    }
+    footer > div:first-of-type > div:last-of-type > form > label{
+        font-size: 14px; font-weight: 400; text-transform: capitalize; width: 18%; display: inline-block;
+        text-align: left; line-height: 50px; vertical-align: top; 
+    }
+    footer > div:first-of-type > div:last-of-type > form > input:not(:last-of-type){
+        width: 78%; line-height: 48px; padding: 0 15px; box-sizing: border-box; border: 1px solid #c1c1c1; 
+        font-size: 14px;
+    }
+    footer > div:first-of-type > div:last-of-type > form > label:first-of-type,
+    footer > div:first-of-type > div:last-of-type > form > input:first-of-type{
+        margin-bottom: 20px;
+    }
+    footer > div:first-of-type > div:last-of-type > form > label:nth-of-type(2),
+    footer > div:first-of-type > div:last-of-type > form > input:nth-of-type(2){
+        margin-bottom: 50px;
+    }
+    footer > div:first-of-type > div:last-of-type > form > input[type="email"]::placeholder{
+        color: #c1c1c1; font-size: 14px; font-family: inherit;
+    }
+    footer > div:first-of-type > div:last-of-type > form > input[type="submit"]{
+        border: none; background-color: #e93535; width: 200px; line-height: 45px; color: inherit;
+        font-size: 16px; font-weight: 400; text-transform: capitalize;
+    }
+    footer > h2{
+        width: 15%; display: inline-block; 
+    }
+    footer > h2 > a{
+        display: block;
+    }
+    footer > h2 > a > img{
+        width: 100%;
+    }
+    footer > div:last-of-type{
+        float: right; padding-top: 25px;
+    }
+    footer > div:last-of-type > span{
+        display: inline-block; color: white; font-size: 14px; font-weight: 400; margin-right: 15px;
+        line-height: 20px; text-align: right; border-right: 1px solid white; padding-right: 15px;
+    }
+    footer > div:last-of-type > ul{
+        display: inline-block;
+    }
+    footer > div:last-of-type > ul > li{
+        display: inline-block; line-height: 20px;
+        background-repeat: no-repeat; background-size: contain;
+    }
+    footer > div:last-of-type > ul > li:not(:last-of-type){
+        margin-right: 20px; width: 20px; background-position: center;
+    }
+    footer > div:last-of-type > ul > li:last-of-type{
+        width: 72px; background-position: right bottom;
+    }
+    footer > div:last-of-type > ul > li:nth-of-type(1){background-image: url('../images/ico_sns_youtube.png');}
+    footer > div:last-of-type > ul > li:nth-of-type(2){background-image: url('../images/ico_sns_facebook.png');}
+    footer > div:last-of-type > ul > li:nth-of-type(3){background-image: url('../images/ico_sns_instagram.png');}
+    footer > div:last-of-type > ul > li:nth-of-type(4){background-image: url('../images/ico_sns_twitter.png');}
+    footer > div:last-of-type > ul > li:nth-of-type(5){background-image: url('../images/logo_portugalPage.png');}
+    
+    footer > div:last-of-type > ul > li > a{
+        text-indent: -9999px; display: block;
+    }
+}
+/* tablet */
+
+
+@media screen and (min-width: 1280px){
+    a.btn_top{
+        width: 50px; line-height: 50px; bottom: 30px; right: 20px;
+    }
+    button.btn_close{
+        width: 25px; line-height: 25px; top: 30px; right: 30px;
+    }
+    a.btn_top:hover{
+        background-image: url('../images/ico_top_hover.png');
+    }
+
+
+    header{
+        position: relative; z-index: 9999;
+    }
+    header h1{
+        width: 200px; position: absolute; left: calc(50% - 100px); top: 40px;
+    }
+    header h1 a{
+        display: block;
+    }
+    header h1 a img{
+        width: 100%; display: block;
+    }
+    header nav{
+        position: absolute; width: 600px; left: -400px; top: 200px; transition-duration: 0.5s;
+    }
+    header nav.active{
+        left: 100px; width: 450px;
+    }
+    header nav::after{
+        content: ''; display: block; clear: both;
+    }
+    header nav > button{
+        background-color: rgba(0, 0, 0, 0.41); border: none; border-radius: 0 200px 200px 0;
+        width: 200px; height: 400px; font-size: 18px; padding: 0 75px 0 20px; box-sizing: border-box;
+        text-align: left; color: white; line-height: 28px; font-family: inherit;
+        background-image: url('../images/ico_arrow.png'); background-repeat: no-repeat;
+        background-position: right 20px center; float: right; margin-top: 44px; transition-duration: 0.5s;
+    }
+    header nav.active > button{
+        width: 50px; height: 100px; border-radius: 0 50px 50px 0; color: transparent;
+        padding: 0px; background-image: url('../images/ico_arrow_re.png'); background-position: right 15px center;
+        margin-top: 190px;
+    }
+    header nav > ul{
+        background-color: rgba(0, 0, 0, 0.4); padding: 60px 60px; box-sizing: border-box;
+        width: 400px; float: right;
+    }
+    header nav > ul > li{
+        font-size: 28px; transition-duration: 0.3s; padding-left: 0px;
+        background-image: url('../images/ico_arrow.png'); background-position: -20px;
+        background-repeat: no-repeat; background-size: 20px;
+    }
+    header nav > ul > li:hover{
+        background-position: left; padding-left: 30px;
+    }
+    header nav > ul > li:not(:last-of-type){
+        margin-bottom: 40px;
+    }
+    header nav > ul > li > a{
+        color: white; display: block;
+    }
+
+
+    footer{
+        padding: 250px 100px 80px; background: url('../images/bg_footer.png') left top / cover no-repeat;
+    }
+    footer > div:first-of-type{
+        background-color: rgba(0, 0, 0, 0.5); padding: 150px 100px; margin-bottom: 80px;
+    }
+    footer > div:first-of-type::after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div:first-of-type > div:first-of-type{
+        float: left; color: white; width: 50%;
+    }
+    footer > div:first-of-type > div:first-of-type > h3{
+        color: inherit; text-transform: capitalize; font-size: 96px; font-weight: 400;
+        margin-bottom: 60px;
+    }
+    footer > div:first-of-type > div:first-of-type > h3::after{
+        content: ''; display: block; border-top: 2px solid #e93535; width: 150px; margin-top: 55px;
+    }
+    footer > div:first-of-type > div:first-of-type > p{
+        color: inherit; font-size: 24px; line-height: 40px; font-weight: 300;
+    }
+    footer > div:first-of-type > div:last-of-type{
+        float: right; color: white; width: 40%; text-align: right;
+    }
+    footer > div:first-of-type > div:last-of-type > form > label{
+        font-size: 24px; font-weight: 400; text-transform: capitalize; width: 20%; display: inline-block;
+        text-align: left; line-height: 65px; vertical-align: top; 
+    }
+    footer > div:first-of-type > div:last-of-type > form > input:not(:last-of-type){
+        width: 78%; line-height: 63px; padding: 0 20px; box-sizing: border-box; border: 1px solid #c1c1c1; 
+        font-size: 20px;
+    }
+    footer > div:first-of-type > div:last-of-type > form > label:first-of-type,
+    footer > div:first-of-type > div:last-of-type > form > input:first-of-type{
+        margin-bottom: 30px;
+    }
+    footer > div:first-of-type > div:last-of-type > form > label:nth-of-type(2),
+    footer > div:first-of-type > div:last-of-type > form > input:nth-of-type(2){
+        margin-bottom: 50px;
+    }
+    footer > div:first-of-type > div:last-of-type > form > input[type="email"]::placeholder{
+        color: #c1c1c1; font-size: 20px; font-family: inherit;
+    }
+    footer > div:first-of-type > div:last-of-type > form > input[type="submit"]{
+        border: none; background-color: #e93535; width: 230px; line-height: 60px; color: inherit;
+        font-size: 20px; font-weight: 400; text-transform: capitalize;
+    }
+    footer > div:first-of-type > div:last-of-type > form > input[type="submit"]:hover{
+        background-color: #95a3b9;
+    }
+    footer > h2{
+        width: 200px; display: inline-block; 
+    }
+    footer > h2 > a{
+        display: block;
+    }
+    footer > h2 > a > img{
+        width: 100%;
+    }
+    footer > div:last-of-type{
+        float: right; margin-top: 60px;
+    }
+    footer > div:last-of-type > span{
+        display: inline-block; color: white; margin-right: 30px; font-size: 20px; font-weight: 400;
+        line-height: 30px; border-right: 1px solid white; padding-right: 30px;
+    }
+    footer > div:last-of-type > ul{
+        display: inline-block;
+    }
+    footer > div:last-of-type > ul > li{
+        display: inline-block; line-height: 30px;
+        background-repeat: no-repeat; background-size: contain; background-position: center;
+    }
+    footer > div:last-of-type > ul > li:not(:last-of-type){
+        margin-right: 30px; width: 30px; background-position: center;
+    }
+    footer > div:last-of-type > ul > li:last-of-type{
+        width: 110px; background-position: right bottom;
+    }
+    footer > div:last-of-type > ul > li:nth-of-type(1){background-image: url('../images/ico_sns_youtube.png');}
+    footer > div:last-of-type > ul > li:nth-of-type(2){background-image: url('../images/ico_sns_facebook.png');}
+    footer > div:last-of-type > ul > li:nth-of-type(3){background-image: url('../images/ico_sns_instagram.png');}
+    footer > div:last-of-type > ul > li:nth-of-type(4){background-image: url('../images/ico_sns_twitter.png');}
+    footer > div:last-of-type > ul > li:nth-of-type(5){background-image: url('../images/logo_portugalPage.png');}
+    
+    footer > div:last-of-type > ul > li > a{
+        text-indent: -9999px; display: block;
+    }
+}
+/* desktop */
