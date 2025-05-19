@@ -54,11 +54,11 @@ function fadeBoxControl(){
     entries.forEach(entry => {
         if (entry.isIntersecting) {
         entry.target.classList.add('show');
-        observer.unobserve(entry.target); // 한 번만 실행하고 중단 (선택 사항)
+        observer.unobserve(entry.target);
         }
     });
     }, {
-    threshold: 0.3 // 화면에 10% 보이면 트리거
+    threshold: 0.3
     });
 
     fadeBox.forEach(img => {
