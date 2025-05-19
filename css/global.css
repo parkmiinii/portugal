@@ -424,6 +424,9 @@ input[type="submit"]{cursor: pointer;}
     header nav > ul > li > a{
         color: white; display: block;
     }
+    header nav > ul > li > a.active{
+        text-decoration: underline; font-style: italic;
+    }
 
 
     footer{
