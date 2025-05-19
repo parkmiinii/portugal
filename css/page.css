@@ -564,6 +564,7 @@
     }
     main > div:last-of-type > ul > li{
         display: block; height: 1030px; position: relative;
+        overflow-x: hidden;
     }
     main > div:last-of-type > ul > li > img{
         display: block; position: absolute; min-width: 680px;
@@ -572,7 +573,7 @@
         margin-bottom: 500px;
     }
     main > div:last-of-type > ul > li:not(:last-of-type) > img{
-        width: 80%;
+        width: 80%; transition-delay: 0.7s;
     }
     main > div:last-of-type > ul > li:last-of-type > img{
         width: 60%;
@@ -598,6 +599,17 @@
     }
     main > div:last-of-type > ul > li:nth-of-type(3n) > div{
         right: 5%; bottom: 0;
+    }
+    main > div:last-of-type > ul > li > img,
+    main > div:last-of-type > ul > li > div{
+        opacity: 0; transform: translateX(300px);
+        transition-property: opacity, transform;
+        transition-timing-function: ease-out;
+        transition-duration: 1s;
+    }
+    main > div:last-of-type > ul > li > img.show,
+    main > div:last-of-type > ul > li > div.show{
+        opacity: 1; transform: translateX(0);
     }
     main > div:last-of-type > ul > li > div > h3{
         font-size: 40px; font-weight: 400; margin-bottom: 60px; line-height: 48px;

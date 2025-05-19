@@ -3,6 +3,7 @@ $(function(){
     popupControl();
     tabControl();
     main_bx();
+    fadeBoxControl();
 })
 
 function btnToggle(){
@@ -42,7 +43,31 @@ document.addEventListener("DOMContentLoaded", function(){
 
         lastScrollY = scrollY;
     });
+
+    
 });
+
+function fadeBoxControl(){
+    var fadeBox = document.querySelectorAll(".fade_right");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target); // 한 번만 실행하고 중단 (선택 사항)
+        }
+    });
+    }, {
+    threshold: 0.3 // 화면에 10% 보이면 트리거
+    });
+
+    fadeBox.forEach(img => {
+    observer.observe(img);
+    });
+    fadeBox.forEach(div => {
+    observer.observe(div);
+    });
+}
 
 function popupControl(){
     var currentPopup = null;
@@ -101,7 +126,6 @@ window.addEventListener("scroll",function(){
 
     if(window.matchMedia('(max-width: 767px)').matches){
         $("main > div:last-of-type > div").addClass("bgChange");
-        // this.alert("addClass");
         
         var changeColor = document.querySelector('.bgChange');
 
