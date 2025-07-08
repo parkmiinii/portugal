@@ -769,7 +769,7 @@
         float: right;
     } 
     div.detailContainer > ol > li > div:first-of-type{
-        width: 45%; box-sizing: border-box;
+        width: 45%; box-sizing: border-box; transform: translateX(-300px);
     } 
     div.detailContainer > ol > li:nth-of-type(2n-1) > div:first-of-type{
         padding-right: 10%;
@@ -796,7 +796,7 @@
 
 
     div.detailContainer > ol > li > div:last-of-type{
-        width: 55%; text-align: right; position: relative;
+        width: 55%; text-align: right; position: relative; transform: translateX(300px);
     }
     div.detailContainer > ol > li > div:last-of-type > img{
         width: 100%; display: block;
@@ -818,6 +818,15 @@
     div.detailContainer > ol > li > div:last-of-type > a:first-of-type > span{
         font-size: 20px; font-weight: 700; color: white; display: inline-block; text-transform: capitalize;
         line-height: 30px; vertical-align: top; margin-left: 10px;
+    }
+    div.detailContainer > ol > li > div{
+        opacity: 0; 
+        transition-property: opacity, transform;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+    }
+    div.detailContainer > ol > li > div.show{
+        opacity: 1; transform: translateX(0);
     }
 
 
